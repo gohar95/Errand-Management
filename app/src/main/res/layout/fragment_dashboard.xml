@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".CustomerData.DashboardFragment">
+
+    <RelativeLayout
+        android:id="@+id/d11"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:padding="15dip"
+            app:centered="true"
+            app:fillColor="@color/mainColor3"
+            app:pageColor="#fff"
+            app:snap="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/d11"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/dd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trending Services"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t1"
+                        android:text="Most Booked Services of all Service Providers"
+                        android:textColor="@color/lightBlack"
+                        android:textSize="16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/trendingRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="202dp"
+                        android:layout_below="@+id/t2"
+                        android:layout_marginTop="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dd2"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you need help with?"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t3"
+                        android:text="Lot more Services to choose from"
+                        android:textColor="@color/lightBlack"
+                        android:textSize="16sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/t4"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/HomeSanitization_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/food" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Check Events"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/Electrician_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/grocery" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Book A Mission"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/Carpentering_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/document" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Find a Avatar"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ACRepairing_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/giftbox" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Gifts"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/Plumbing_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/goods" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Goods"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/catering_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/furniture" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Furniture"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/hall_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/luggage" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Luggage"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/decorator_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/decorator_icon" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Decorator"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/photo_service"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:paddingTop="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/photographer_icon" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Photographer"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

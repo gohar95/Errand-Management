@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f1f1f1"
+    tools:context=".ProviderData.ReviewsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:id="@+id/tt1"
+                android:background="@color/mainColor3">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_below="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Current Rating"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/t2">
+                    <TextView
+                        android:id="@+id/yourRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_baseline_star_24"
+                        android:layout_toRightOf="@+id/yourRating" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/t3"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="match_parent"
+                            android:tint="@color/white"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center|bottom|left"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ProgressBar
+                            android:id="@+id/five_review_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:scaleY="2.5"
+                            android:progress="0"
+                            android:max="100"
+                            android:progressTint="@color/white"
+                            android:paddingHorizontal="10dp"
+                            android:layout_weight=".2"
+                            android:paddingTop="1dp" />
+
+                        <TextView
+                            android:id="@+id/five_review_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="match_parent"
+                            android:tint="@color/white"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center|bottom|left"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ProgressBar
+                            android:id="@+id/four_review_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:scaleY="2.5"
+                            android:progress="0"
+                            android:max="100"
+                            android:progressTint="@color/white"
+                            android:paddingHorizontal="10dp"
+                            android:layout_weight=".2"
+                            android:paddingTop="1dp" />
+
+                        <TextView
+                            android:id="@+id/four_review_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="match_parent"
+                            android:tint="@color/white"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center|bottom|left"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ProgressBar
+                            android:id="@+id/three_review_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:scaleY="2.5"
+                            android:progress="0"
+                            android:max="100"
+                            android:progressTint="@color/white"
+                            android:paddingHorizontal="10dp"
+                            android:layout_weight=".2"
+                            android:paddingTop="1dp" />
+
+                        <TextView
+                            android:id="@+id/three_review_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="match_parent"
+                            android:tint="@color/white"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center|bottom|left"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ProgressBar
+                            android:id="@+id/two_review_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:scaleY="2.5"
+                            android:progress="0"
+                            android:max="100"
+                            android:progressTint="@color/white"
+                            android:paddingHorizontal="10dp"
+                            android:layout_weight=".2"
+                            android:paddingTop="1dp" />
+
+                        <TextView
+                            android:id="@+id/two_review_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="match_parent"
+                            android:tint="@color/white"
+                            android:paddingTop="3dp"
+                            android:layout_gravity="center|bottom|left"
+                            android:src="@drawable/ic_baseline_star_24" />
+
+                        <ProgressBar
+                            android:id="@+id/one_review_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:scaleY="2.5"
+                            android:progress="0"
+                            android:max="100"
+                            android:progressTint="@color/white"
+                            android:paddingHorizontal="10dp"
+                            android:layout_weight=".2"
+                            android:paddingTop="1dp" />
+
+                        <TextView
+                            android:id="@+id/one_review_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="50dp"
+                        android:id="@+id/readReviews"
+                        android:text="Read all reviews"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="50dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@drawable/btn3" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:layout_below="@+id/tt1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn1"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="17dp"
+                        android:tint="@color/mainColor3"
+                        android:src="@drawable/ic_baseline_stars_24" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:textColor="@color/GreyColor"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:gravity="bottom"
+                            android:layout_weight="1"
+                            android:id="@+id/peopleCount" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="People Reviewed"
+                            android:textColor="@color/GreyColor"
+                            android:textSize="14sp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn2"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="17dp"
+                        android:tint="@color/mainColor3"
+                        android:src="@drawable/accept_icon" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:textColor="@color/GreyColor"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:gravity="bottom"
+                            android:layout_weight="1"
+                            android:id="@+id/jobCount" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Task Completed"
+                            android:textColor="@color/GreyColor"
+                            android:textSize="14sp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_below="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/newlogo"
+                android:alpha="0.1" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

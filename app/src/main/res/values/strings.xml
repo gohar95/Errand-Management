@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Avatar</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Plumbring</string>
+    <string name="slide_1_desc">You can hire any plumber on your doorstep.\nIf you have any issue regarding plumbring then you are at right place!</string>
+
+    <string name="slide_2_title">Electrician</string>
+    <string name="slide_2_desc">You can hire any Electrician on your doorstep.\nIf you have any issue regarding Wiring/Solar then you are at right place!</string>
+
+    <string name="slide_3_title">Carpenter</string>
+    <string name="slide_3_desc">You can hire any Carpenter on your doorstep.\nIf you have any issue regarding Furnituring then you are at right place!</string>
+
+    <string name="slide_4_title">AC Repairing/Cleaning</string>
+    <string name="slide_4_desc">You can hire any AC Repairer on your doorstep.\nIf you have any issue regarding AC Repairing/Cleaning then you are at right place!</string>
+
+    <string name="map_key" translatable="false">AIzaSyCQziImJFDgUuSY4V514F3LkVJI5wWRsvo</string>
+
+
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Casa</string>
+    <string name="title_dashboard">Pannello di controllo</string>
+    <string name="title_notifications">Notifiche</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

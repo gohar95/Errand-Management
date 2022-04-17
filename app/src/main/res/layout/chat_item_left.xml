@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginLeft="5dp"
+    android:background="@drawable/background_left"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="100dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        app:civ_border_width="1dp"
+        android:layout_marginLeft="5dp"
+        app:civ_border_color="@color/lightBlack"
+        android:src="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/shopMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:gravity="center|left"
+        android:textStyle="bold"
+        android:layout_marginLeft="55dp"
+        android:textColor="@color/lightBlack"
+        android:textSize="20sp" />
+</RelativeLayout>

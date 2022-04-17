@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProviderData.ProviderDashboard">
+
+    <RelativeLayout
+        android:background="@color/mainColor3"
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/main_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Requests"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/side_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:tint="@color/white"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+    </RelativeLayout>
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:navGraph="@navigation/provider_nav" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationBottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e9e9e9"
+        app:itemIconTint="@drawable/tab_color"
+        app:itemTextColor="@drawable/tab_color"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

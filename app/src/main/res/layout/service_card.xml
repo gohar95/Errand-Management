@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/serviceName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center|left"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textColor="@color/lightBlack" />
+
+        <TextView
+            android:id="@+id/serviceDesc"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:textColor="@color/lightBlack" />
+
+        <TextView
+            android:id="@+id/serviceType"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="15dp"
+            android:textColor="@color/lightBlack"
+            android:background="@drawable/type_design" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightGreyColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Rs. "
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#0D5609" />
+
+            <TextView
+                android:id="@+id/servicePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#0D5609" />
+
+            <TextView
+                android:id="@+id/servicePriceType"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:textColor="@color/lightBlack" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1012513092054",
+    "project_id": "errandmanagement-74168",
+    "storage_bucket": "errandmanagement-74168.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012513092054:android:553be9f6720548ca99b477",
+        "android_client_info": {
+          "package_name": "com.fyp.errandmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012513092054-jrpeo06kmeb31lr2tgigmnb27t9qcgd6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fyp.errandmanagement",
+            "certificate_hash": "5051a4a653d31faa224e6fe99031358f02027525"
+          }
+        },
+        {
+          "client_id": "1012513092054-p52jujn2bka9cafv2u4ljnuqt5j3it61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk9sbUOz4Xop3f79ZDZCnWxzLrzp1xpgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012513092054-p52jujn2bka9cafv2u4ljnuqt5j3it61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

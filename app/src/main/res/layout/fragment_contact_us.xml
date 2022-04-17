@@ -1,0 +1,355 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    tools:ignore="InefficientWeight,HardcodedText,RtlHardcoded,ContentDescription,KeyboardInaccessibleWidget"
+    tools:context=".CustomerData.ContactUsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#fffafa">
+        <ImageView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/newlogo"/>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contacts:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:id="@+id/callHelpLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/activity_horizontal_margin"
+                tools:ignore="KeyboardInaccessibleWidget">
+
+                <ImageView
+                    android:id="@+id/ivContactItem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    app:srcCompat="@drawable/ic_phone_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/tvNumber1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem1"
+                    android:layout_toRightOf="@id/ivContactItem1"
+                    android:text="(+92) 303-6240-478"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#212121"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNumber1"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/ivContactItem1"
+                    android:layout_toRightOf="@id/ivContactItem1"
+                    android:text="Lahore Head Office\nHand-Aid Office HelpLine"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#727272"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <ImageButton
+                    android:id="@+id/copyPhoneOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/ic_content_copy_black_24dp"
+                    android:backgroundTint="@color/lightGreyColor"
+                    android:padding="6dp"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/callSupportCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/activity_horizontal_margin"
+                tools:ignore="KeyboardInaccessibleWidget">
+
+                <ImageView
+                    android:id="@+id/ivContactItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    app:srcCompat="@drawable/ic_phone_black_24dp"
+                    tools:ignore="ContentDescription,RtlHardcoded,VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/tvNumber2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem2"
+                    android:layout_toRightOf="@id/ivContactItem2"
+                    android:text="(+92) 321-6013-994"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#212121"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNumber2"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/ivContactItem2"
+                    android:layout_toRightOf="@id/ivContactItem2"
+                    android:text="UCP Branch\nHand-Aid Office HelpLine"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#727272" />
+
+                <ImageButton
+                    android:id="@+id/copyPhoneTwo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/ic_content_copy_black_24dp"
+                    android:backgroundTint="@color/lightGreyColor"
+                    android:padding="6dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#B6B6B6" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/copyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <ImageView
+                    android:id="@+id/ivContactItem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    app:srcCompat="@drawable/ic_email_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/tvNumber3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem3"
+                    android:layout_toLeftOf="@+id/sendEmail"
+                    android:layout_toRightOf="@id/ivContactItem3"
+                    android:layout_toStartOf="@+id/sendEmail"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="maradeveloper9@gmail.com"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNumber3"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/ivContactItem3"
+                    android:layout_toRightOf="@id/ivContactItem3"
+                    android:text="For any Query"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#727272" />
+
+                <ImageButton
+                    android:id="@+id/sendEmail"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:background="#00000000"
+                    android:tint="@color/lightGreyColor"
+                    app:srcCompat="@drawable/ic_send_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#B6B6B6" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/addressTwoCopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <ImageView
+                    android:id="@+id/ivContactItem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:tint="@color/colorPrimaryDark"
+                    app:srcCompat="@drawable/ic_location_on_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/tvNumber6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem6"
+                    android:layout_toRightOf="@id/ivContactItem6"
+                    android:ellipsize="end"
+                    android:text="Head Office, Lahore Plaza-Shop No: abc\n(1st Floor), Lahore"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNumber6"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/ivContactItem6"
+                    android:layout_toRightOf="@id/ivContactItem6"
+                    android:text="For your any Query"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#727272" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#B6B6B6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Developed by: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" Ammara"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="maradeveloper9@gmail.com"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

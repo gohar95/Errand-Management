@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CustomerData.CancleOrder">
+
+    <RelativeLayout
+        android:id="@+id/reli1"
+        android:layout_width="match_parent"
+        android:background="#f5f5f5"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cccc"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/mainColor3"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Order ID:"/>
+
+        <RelativeLayout
+            android:id="@+id/fff"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cccc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SC-"/>
+                <EditText
+                    android:id="@+id/orderIID"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:inputType="number"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/edit_design"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/orderSearch"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/fff"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/printOrder"
+        android:visibility="gone"
+        android:layout_below="@+id/reli1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:alpha=".05"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:padding="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/app_logo"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ttt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Order"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_below="@+id/ttt1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/oo11"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/morderID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/oo22"
+                    android:layout_below="@+id/oo11"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/morderNAME"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/GreyColor"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/oo33"
+                    android:layout_below="@+id/oo22"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/morderQUAN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/GreyColor"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/morderPLAN"
+                    android:layout_below="@+id/oo22"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/GreyColor"
+                    android:textSize="18sp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/oo44"
+                    android:layout_below="@+id/oo33"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/morderTIME"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/GreyColor"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/morderCOST"
+                    android:layout_below="@+id/oo33"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/GreyColor"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/cancleButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:text="Cancle Order"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

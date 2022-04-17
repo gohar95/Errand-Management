@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/provider_nav"
+    app:startDestination="@id/navigation_request">
+    <fragment
+        android:id="@+id/navigation_request"
+        android:name="com.fyp.errandmanagement.ProviderData.RequestsFragment"
+        tools:layout="@layout/fragment_requests" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.fyp.errandmanagement.ProviderData.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_reviews"
+        android:name="com.fyp.errandmanagement.ProviderData.ReviewsFragment"
+        tools:layout="@layout/fragment_reviews" />
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.fyp.errandmanagement.ProviderData.ChatFragment"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/navigation_post_services"
+        android:name="com.fyp.errandmanagement.ProviderData.PostServicesFragment"
+        tools:layout="@layout/fragment_post_services" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.fyp.errandmanagement.ProviderData.AccountFragment"
+        tools:layout="@layout/fragment_account" />
+</navigation>

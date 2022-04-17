@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EDEDED"
+    tools:context=".CustomerData.ServicesCategory">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@color/mainColor3" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_below="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/categoryServiceRecycler" />
+
+    <TextView
+        android:id="@+id/nothingHere"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:alpha="0.5"
+        android:text="Service Box is\nEmpty" />
+
+</RelativeLayout>

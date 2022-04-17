@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProviderData.ProviderMessgaeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#ffffff"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mainColor3">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/personIMG"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            app:civ_border_width="1dp"
+            android:layout_marginLeft="10dp"
+            app:civ_border_color="@color/white"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/personName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/img_call_skype"
+            android:src="@drawable/call"
+            android:layout_alignParentEnd="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r1"
+        android:id="@+id/chatCustomerRecycler"
+        android:layout_marginBottom="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="60dp"
+            android:background="#00000000"
+            android:id="@+id/your_msg"
+            android:hint="Enter Message Here!"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:paddingHorizontal="10dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:id="@+id/send_message"
+            android:tint="@color/mainColor3"
+            android:src="@drawable/ic_baseline_send_24" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CustomerData.OrderFinished">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="260dp">
+
+                <ImageView
+                    android:id="@+id/ref112"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/finish_stamp"/>
+                <TextView
+                    android:id="@+id/ref113"
+                    android:layout_below="@+id/ref112"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click Below to Finish Order"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_below="@+id/ref113"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="When you finish order then give your\nReviews to the Service Provider"
+                    android:gravity="center"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/GreyColor"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/finish_card"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_height="220dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your Order ID"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/GreyColor"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/orderCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/jobDone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="130dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/mainColor3"
+                        android:text="Order Finish"
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/review_card"
+                android:layout_below="@+id/r1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="-230dp"
+                android:layout_height="330dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:background="@color/white"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Give your Reviews"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/GreyColor"
+                        android:layout_marginTop="10dp"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="45dp"
+                        android:max="5"
+                        android:numStars="5"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/ratingText"
+                        android:layout_marginTop="120dp"
+                        android:background="@drawable/type_design"
+                        android:drawableLeft="@drawable/ic_baseline_assignment_24"
+                        android:paddingHorizontal="10dp"
+                        android:gravity="left|center"
+                        android:paddingVertical="10dp"
+                        android:hint="Enter Your Comments"
+                        android:layout_marginHorizontal="20dp"
+                        android:drawableTint="@color/mainColor3"
+                        android:drawablePadding="10dp"
+                        android:maxLines="3"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/reviewDone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="250dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/mainColor3"
+                        android:text="Publish Review"
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

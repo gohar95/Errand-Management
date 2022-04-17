@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".CustomerData.MyBookingFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myorderRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

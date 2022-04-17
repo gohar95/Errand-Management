@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_request"
+        android:icon="@drawable/request_icon"
+        android:title="Requests" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/navigation_reviews"
+        android:icon="@drawable/ic_baseline_rate_review_24"
+        android:title="Reviews" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_baseline_forum_24"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/navigation_post_services"
+        android:icon="@drawable/ic_baseline_insert_invitation_24"
+        android:title="Errand" />
+
+</menu>

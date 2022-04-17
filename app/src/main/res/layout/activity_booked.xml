@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerData.Booked">
+
+    <RelativeLayout
+        android:id="@+id/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="Order Placed"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ddd1"
+        android:layout_below="@+id/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THANK YOU"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FOR YOUR ORDER"
+            android:gravity="center"
+            android:layout_below="@+id/tt1"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/GreyColor"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/orderNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/tt2"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/GreyColor"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/ddd1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/delivery_image"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/okPlaced"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>

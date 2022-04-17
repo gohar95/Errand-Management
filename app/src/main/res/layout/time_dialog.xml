@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pdd"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:background="#eaeaea">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/time_icon"
+            android:tint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/aaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Visit TIME"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_below="@+id/aaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Time of visit Home"
+            android:textColor="@color/GreyColor"
+            android:textSize="17sp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/pdd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/radioTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00 AM - 11:00 AM"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00 AM - 02:00 PM"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:buttonTint="@color/colorPrimaryDark" />
+
+
+            <RadioButton
+                android:id="@+id/radioT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:00 PM - 05:00 PM"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:buttonTint="@color/colorPrimaryDark" />
+
+
+            <RadioButton
+                android:id="@+id/radioT4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05:00 PM - 08:00 PM"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:buttonTint="@color/colorPrimaryDark" />
+
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

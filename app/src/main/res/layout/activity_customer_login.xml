@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerData.CustomerLogin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/white"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/backBTN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="onBackBTNClicked"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:tint="@color/GreyColor"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_back"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Back"
+                android:textColor="@color/GreyColor"
+                android:layout_marginLeft="-10dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_below="@id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/newlogo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/r3"
+        android:paddingVertical="5dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/r2">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Hello"
+                    android:textColor="#282828"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sign into your Account"
+                    android:textColor="#282828"
+                    android:textSize="16sp"
+                    android:layout_marginTop="2dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/customerEmailLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    android:layout_marginTop="20dp"
+                    android:hint="Email"
+                    app:startIconTint="@color/mainColor3"
+                    app:endIconTint="@color/colorPrimary"
+                    app:hintTextColor="#C2C2C2"
+                    app:startIconDrawable="@drawable/ic_baseline_email_24">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/customerEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:maxLines="1"
+                        android:backgroundTint="@color/mainColor3"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/customerPasswordLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="password_toggle"
+                    android:layout_marginTop="5dp"
+                    android:hint="Password"
+                    app:startIconTint="@color/mainColor3"
+                    app:endIconTint="@color/colorPrimary"
+                    app:hintTextColor="#C2C2C2"
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/customerPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:maxLines="1"
+                        android:backgroundTint="@color/mainColor3"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+                    android:text="Forgot your Password?"
+                    android:textColor="#717171"
+                    android:onClick="onForgotClicked"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/customerSignIn"
+                    android:text="Login"
+                    android:onClick="onCustomerSignInClicked"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btnstyleround" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:textSize="15sp"
+            android:text="Don't have an Account?"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Register Now"
+            android:id="@+id/redirectRegister"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:onClick="onRedirectRegisterClicked"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/mainColor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+    </LinearLayout>
+</RelativeLayout>

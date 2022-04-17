@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fyp.errandmanagement">
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/iconfinal"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconfinal"
+        tools:replace="android:icon"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.ProviderProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.ReadReviews"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.CompletedOrder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.OrderFinished"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.ProviderMessgaeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.OrderDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.EditOrder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.Booked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.CheckOut"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.ServicesCategory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.UserMessgaeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.ServiceDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.CustomerDashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.PostingServices"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.ProviderDashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.CustomerRegistration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.ProviderRegistration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.CustomerLogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.ProviderLogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.SelectionScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.ProviderData.ProviderMapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.CustomerData.CustomerMapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fyp.errandmanagement.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <service
+            android:name="com.fyp.errandmanagement.AppService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.fyp.errandmanagement.SendNotificationPack.MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+</manifest>

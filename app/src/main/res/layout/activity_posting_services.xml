@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProviderData.PostingServices">
+
+    <RelativeLayout
+        android:background="@color/mainColor3"
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/headingImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/plumbing_back"
+            android:scaleType="centerCrop" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="0.5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Plumbing"
+            android:id="@+id/headingName"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/r3"
+            android:paddingVertical="5dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@+id/r2">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/tit"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="25dp"
+                        android:id="@+id/serviceNameLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        android:hint="Service Name"
+                        app:startIconTint="@color/mainColor3"
+                        app:endIconTint="@color/colorPrimary"
+                        app:hintTextColor="#C2C2C2"
+                        app:startIconDrawable="@drawable/ic_baseline_insert_invitation_24">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/serviceName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:backgroundTint="@color/mainColor3"
+                            android:inputType="text"
+                            android:textColor="@color/colorBlack" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/serviceDescLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        android:layout_marginTop="5dp"
+                        android:hint="Service Description"
+                        app:startIconTint="@color/mainColor3"
+                        app:endIconTint="@color/colorPrimary"
+                        app:hintTextColor="#C2C2C2"
+                        app:startIconDrawable="@drawable/request_icon">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/serviceDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:maxLines="1"
+                            android:backgroundTint="@color/mainColor3"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Service Type:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="15dp" />
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/spinnerServiceType"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/lightBlack"
+                        app:ms_background_color="#F4EBE5"
+                        android:layout_height="40dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/servicePriceLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Price"
+                        app:startIconTint="@color/mainColor3"
+                        app:endIconTint="@color/colorPrimary"
+                        app:hintTextColor="#C2C2C2"
+                        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/servicePrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:maxLines="1"
+                            android:backgroundTint="@color/mainColor3"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Price Type:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="15dp" />
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:visibility="gone"
+                        android:id="@+id/spinnerPriceType"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        app:ms_background_color="#F4EBE5"
+                        android:textColor="@color/lightBlack"
+                        android:layout_height="40dp"/>
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/providerSignUp"
+                        android:text="Post Service"
+                        android:textSize="18sp"
+                        android:onClick="onPostServiceClicked"
+                        android:textAllCaps="false"
+                        android:layout_marginHorizontal="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btnstyleround" />
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
